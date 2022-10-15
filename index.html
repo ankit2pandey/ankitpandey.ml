@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stile.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    
+    <title>Ankit Pandey</title>
+</head>
+<body style="background-color:  #010508; ">
+     
+     
+     <div class="container register">
+        <div class="row">
+            <div class="col-md-12">
+                    <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <h3 class="register-heading">     </h3>
+                        
+                        <div class="row register-form">
+                            <div class="col-md-12" id="bor">
+                                <form method="post" autocomplete="off" name="google-sheet">
+                                   
+                                    <div class="form-group">
+                                        full name
+                <input type="text" name="full name" class="form-control" placeholder="full name *" value="" required=""/>
+                                    </div>
+                                    <div class="form-group">
+                                        mail
+                                        <input type="email" name="mail" class="form-control" placeholder="mail *" value="" required=""/>
+                                     </div>
+                                     <div class="form-group">
+                                        phone number
+                                        <input type="number" name="phone number" class="form-control" placeholder="phone number *" value="" required=""/>
+                                     </div>
+                                     <div class="form-group">
+                                        your insights/Suggestions/ideas to make a better tommorow
+                                        <input type="text" name="your insights/Suggestions/ideas to make a better tommorow" class="form-control" placeholder="your insights/Suggestions/ideas to make a better tommorow *" value="" required="" />
+                                     </div>
+                                     
+
+
+                                     <div class="form-group">
+                                        linkedin
+                                        <input type="url" name="linkedin" class="form-control" placeholder="linkedin *" value="https://linkedin.com"  />
+                                     </div>
+                                     <div class="form-group">
+                                        twitter
+                                        <input type="url" name="twitter" class="form-control" placeholder="twitter *" value="https://twitter.com"  />
+                                     </div>
+                                     <div class="form-group">
+                                        instagram
+                                        <input type="url" name="instagram" class="form-control" placeholder="instagram *" value="https://instagram.com"  />
+                                     </div>
+                                     
+                                    
+                                    
+                                    
+                                    
+                                      
+                    <div class="form-group">
+                        <button class="op">
+                            <p>Send</p>
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                              <path id="paper-plane-icon" d="M462,54.955L355.371,437.187l-135.92-128.842L353.388,167l-179.53,124.074L50,260.973L462,54.955z
+                          M202.992,332.528v124.517l58.738-67.927L202.992,332.528z"></path> 
+                            </svg>
+                          </button> 
+                    </div>
+                                    
+                                </form>
+                               
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+     <div class="but">
+    <a href="PROJECTS"><button class="glow-on-hover" type="button">Recent Project</button></a> 
+     </div>
+</body>
+<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+
+<script>
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwsnMuHaL8RXYd2-sE12D1FrKoHCzNkRJNbtEPJe2VM1dg71-fhV1PBDgSAVlZ1IwSmMQ/exec'
+        const form = document.forms['google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..." + url))
+            .catch(error => console.error('Error!', error.message))
+            window.location.href = 'https://script.google.com/macros/s/AKfycbzPzVwqtKwEYVvyVWYvTGEelUw4gzg410aSlFk9mQ3n/dev';
+        })
+      </script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</html>
